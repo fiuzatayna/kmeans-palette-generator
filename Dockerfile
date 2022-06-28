@@ -7,4 +7,5 @@ WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-CMD streamlit run app.py --server.port 8000
+CMD streamlit run app.py --server.port $PORT
+
